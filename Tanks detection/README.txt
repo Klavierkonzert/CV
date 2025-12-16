@@ -1,0 +1,5 @@
+This is a small project with a pipeline of training and fine-tuning a YOLO model to detect tanks in WOT Blitz game on phones. 2 classes of objects were introduced in this problem (`destroyed_tank` and `tank`), but on the majority of screenshots only one of them is present. Though this could bring some complications, further usage of the model implies focusing on `tank`s rather than `destroyed_tank` + the exact matching of prediction boxes is not cruicial, thus in this problem setting recall must be optimized.
+
+The Jupiter notebook describes the whole pipeline, source data (annotated screenshots) and saved models can be found here: https://drive.google.com/drive/folders/1KjH53FHYjSqeUH8SYQ8p0K5VtRbLMM41?usp=drive_link (restricted access)
+
+folder `models` contains the best model trained in this notebook
